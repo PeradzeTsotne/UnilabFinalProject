@@ -460,24 +460,42 @@ S
 
 }
 
+/* ================Section 3======================= */
 .tours-box-dest {
     width: 100%;
     height: 800px;
     background-color: black;
+
+
 }
 
-/* ================Section 3======================= */
+
 
 
 .tours-title {
     background-color: #ffffff;
     width: 30%;
-    border-bottom: 2px solid red;
-    border-width: thick 6px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .tours-title h3 {
     font-size: 40px;
-    width: 100px;
+    width: 100%;
     padding: 10px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid red;
+    border-width: thick 6px;
+}
+
+/* .destinations-box {
+    font-size: 40px;
+    margin-left: 20px;
+    
+} */
+.dest-list li {
+    font-size: 25px;
+    margin: 15px 35px 35px 5px;
+    padding: 15px;
 }
