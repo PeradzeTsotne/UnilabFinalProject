@@ -8,21 +8,28 @@ body {
 
 
 .header-container {
-    margin-left: 10px;
+    padding: 10px;
 }
 
 .disf {
     display: flex;
 }
+.logo-text {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;}
 
 .navigation {
 
     justify-content: space-evenly;
+    align-items: center;
+ 
 }
 
 .navigation h3 {
     margin-top: 50px;
     margin-left: -100px;
+
 }
 
 
@@ -36,14 +43,121 @@ body {
     align-items: center;
     width: 500px;
 }
+.navbar-li a {
+    color:#00d4ff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .navbar-li {
+    position: relative;
+}
+.navbar-li:hover {
+
+        box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+    }
+.navbar-li:hover::before, .navbar-li:hover::after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #FDA8CF;
+        border-radius: 75px;
+        z-index: -1;
+        animation: 1s clockwise infinite;
+      }
+      
+      .navbar-li:hover:after {
+        background: #F3CE5E;
+        animation: 2s counterclockwise infinite;
+      }
+      
+      @keyframes clockwise {
+        0% {
+          top: -5px;
+          left: 0;
+        }
+        12% {
+          top: -2px;
+          left: 2px;
+        }
+        25% {
+          top: 0;
+          left: 5px;    
+        }
+        37% {
+          top: 2px;
+          left: 2px;
+        }
+        50% {
+          top: 5px;
+          left: 0;    
+        }
+        62% {
+          top: 2px;
+          left: -2px;
+        }
+        75% {
+          top: 0;
+          left: -5px;
+        }
+        87% {
+          top: -2px;
+          left: -2px;
+        }
+        100% {
+          top: -5px;
+          left: 0;    
+        }
+      }
+      
+      @keyframes counterclockwise {
+        0% {
+          top: -5px;
+          right: 0;
+        }
+        12% {
+          top: -2px;
+          right: 2px;
+        }
+        25% {
+          top: 0;
+          right: 5px;    
+        }
+        37% {
+          top: 2px;
+          right: 2px;
+        }
+        50% {
+          top: 5px;
+          right: 0;    
+        }
+        62% {
+          top: 2px;
+          right: -2px;
+        }
+        75% {
+          top: 0;
+          right: -5px;
+        }
+        87% {
+          top: -2px;
+          right: -2px;
+        }
+        100% {
+          top: -5px;
+          right: 0;    
+        }
+      }
+ */
 
 /* ======================= */
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1366px;
+    max-width: 100%;
     height: 600px;
     position: relative;
-    margin: 5px 15px 5px 15px;
+    margin: 5px;
 }
 
 .img {
@@ -83,12 +197,15 @@ body {
 /* Caption text */
 .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: 35px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+   
 }
 
 /* Number text (1/3 etc) */
@@ -169,24 +286,27 @@ body {
     font-weight: bold;
     border-bottom: 2px solid red;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
 }
 
-.main-box {
 
-    background-color: gray;
-}
 
 
 .box-info {
     width: 400px;
     height: 400px;
+    margin: 15px;
+    position: relative;
+    box-shadow: -4px 3px 22px -4px rgba(0,0,0,1);
+    border-radius: 50%;
+    
+
+}
+.bckgr-box {
     background-color: wheat;
     background-image: url(../IMG/Gudauri.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 5px;
-    position: relative;
-
 }
 
 .text-box-info {
@@ -202,12 +322,10 @@ body {
 .parent-boxes {
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: ;
+    
 }
 
 .info :nth-child(2) {
-    width: 400px;
-    height: 400px;
     background-color: wheat;
     background-image: url(../IMG/Ushguli.jpg);
     background-size: cover;
@@ -215,8 +333,6 @@ body {
 }
 
 .info :nth-child(3) {
-    width: 400px;
-    height: 400px;
     background-color: wheat;
     background-image: url(../IMG/kazbegi.jpg);
     background-size: cover;
@@ -224,8 +340,6 @@ body {
 }
 
 .info :nth-child(4) {
-    width: 400px;
-    height: 400px;
     background-color: wheat;
     background-image: url(../IMG/toba.jpg);
     background-size: cover;
@@ -233,8 +347,6 @@ body {
 }
 
 .info :nth-child(5) {
-    width: 400px;
-    height: 400px;
     background-color: wheat;
     background-image: url(../IMG/bakhmaro.jpg);
     background-size: cover;
@@ -242,10 +354,31 @@ body {
 }
 
 .info :nth-child(6) {
-    width: 400px;
-    height: 400px;
     background-color: wheat;
     background-image: url(../IMG/gomismta.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.info :nth-child(7) {
+    background-color: wheat;
+    background-image: url(../IMG/Juta1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.MM {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-radius: 50%;
+}
+.MM h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: crimson;
+
 }
