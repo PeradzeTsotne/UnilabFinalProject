@@ -2,8 +2,8 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: Verdana, sans-serif;
-    margin: 0
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -14,16 +14,18 @@ body {
 .disf {
     display: flex;
 }
+
 .logo-text {
     width: 400px;
     display: flex;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
 
 .navigation {
 
     justify-content: space-evenly;
     align-items: center;
- 
+
 }
 
 .navigation h3 {
@@ -43,112 +45,133 @@ body {
     align-items: center;
     width: 500px;
 }
+
 .navbar-li a {
-    color:#00d4ff;
+    color: #00d4ff;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
 /* .navbar-li {
     position: relative;
 }
-.navbar-li:hover {
 
-        box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+.navbar-li:hover {
+S
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+}
+
+.navbar-li:hover::before,
+.navbar-li:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+}
+
+.navbar-li:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+    0% {
+        top: -5px;
+        left: 0;
     }
-.navbar-li:hover::before, .navbar-li:hover::after {
-        display: block;
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: #FDA8CF;
-        border-radius: 75px;
-        z-index: -1;
-        animation: 1s clockwise infinite;
-      }
-      
-      .navbar-li:hover:after {
-        background: #F3CE5E;
-        animation: 2s counterclockwise infinite;
-      }
-      
-      @keyframes clockwise {
-        0% {
-          top: -5px;
-          left: 0;
-        }
-        12% {
-          top: -2px;
-          left: 2px;
-        }
-        25% {
-          top: 0;
-          left: 5px;    
-        }
-        37% {
-          top: 2px;
-          left: 2px;
-        }
-        50% {
-          top: 5px;
-          left: 0;    
-        }
-        62% {
-          top: 2px;
-          left: -2px;
-        }
-        75% {
-          top: 0;
-          left: -5px;
-        }
-        87% {
-          top: -2px;
-          left: -2px;
-        }
-        100% {
-          top: -5px;
-          left: 0;    
-        }
-      }
-      
-      @keyframes counterclockwise {
-        0% {
-          top: -5px;
-          right: 0;
-        }
-        12% {
-          top: -2px;
-          right: 2px;
-        }
-        25% {
-          top: 0;
-          right: 5px;    
-        }
-        37% {
-          top: 2px;
-          right: 2px;
-        }
-        50% {
-          top: 5px;
-          right: 0;    
-        }
-        62% {
-          top: 2px;
-          right: -2px;
-        }
-        75% {
-          top: 0;
-          right: -5px;
-        }
-        87% {
-          top: -2px;
-          right: -2px;
-        }
-        100% {
-          top: -5px;
-          right: 0;    
-        }
-      }
+
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+
+    25% {
+        top: 0;
+        left: 5px;
+    }
+
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+
+    50% {
+        top: 5px;
+        left: 0;
+    }
+
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+
+    75% {
+        top: 0;
+        left: -5px;
+    }
+
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+
+    100% {
+        top: -5px;
+        left: 0;
+    }
+}
+
+@keyframes counterclockwise {
+    0% {
+        top: -5px;
+        right: 0;
+    }
+
+    12% {
+        top: -2px;
+        right: 2px;
+    }
+
+    25% {
+        top: 0;
+        right: 5px;
+    }
+
+    37% {
+        top: 2px;
+        right: 2px;
+    }
+
+    50% {
+        top: 5px;
+        right: 0;
+    }
+
+    62% {
+        top: 2px;
+        right: -2px;
+    }
+
+    75% {
+        top: 0;
+        right: -5px;
+    }
+
+    87% {
+        top: -2px;
+        right: -2px;
+    }
+
+    100% {
+        top: -5px;
+        right: 0;
+    }
+}
  */
 
 /* ======================= */
@@ -203,9 +226,9 @@ body {
     bottom: 8px;
     width: 100%;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
-   
+
 }
 
 /* Number text (1/3 etc) */
@@ -285,7 +308,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     border-bottom: 2px solid red;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 15px;
 }
 
@@ -297,76 +320,84 @@ body {
     height: 400px;
     margin: 15px;
     position: relative;
-    box-shadow: -4px 3px 22px -4px rgba(0,0,0,1);
+    box-shadow: -4px 3px 22px -4px rgba(0, 0, 0, 1);
     border-radius: 50%;
-    
+
 
 }
+
 .bckgr-box {
-    background-color: wheat;
-    background-image: url(../IMG/Gudauri.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.text-box-info {
-    position: absolute;
-    display: none;
-    color: red;
-}
-
-.text-box-info:hover {
-    display: block;
-}
-
-.parent-boxes {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-}
-
-.info :nth-child(2) {
-    background-color: wheat;
-    background-image: url(../IMG/Ushguli.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.info :nth-child(3) {
-    background-color: wheat;
-    background-image: url(../IMG/kazbegi.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.info :nth-child(4) {
-    background-color: wheat;
-    background-image: url(../IMG/toba.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.info :nth-child(5) {
-    background-color: wheat;
-    background-image: url(../IMG/bakhmaro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.info :nth-child(6) {
-    background-color: wheat;
-    background-image: url(../IMG/gomismta.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.info :nth-child(7) {
-    background-color: wheat;
-    background-image: url(../IMG/Juta1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.MM {
+
+
+
+
+.parent-boxes {
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.parent-boxes :nth-child(1) {
+
+    background-image: url(../IMG/Mestia.jpg);
+
+
+}
+
+
+.parent-boxes :nth-child(2) {
+    background-image: url(../IMG/Ushguli.jpg);
+
+}
+
+.parent-boxes :nth-child(3) {
+
+    background-image: url(../IMG/kazbegi.jpg);
+
+}
+
+.parent-boxes :nth-child(4) {
+
+    background-image: url(../IMG/toba.jpg);
+
+}
+
+.parent-boxes :nth-child(5) {
+
+    background-image: url(../IMG/bakhmaro.jpg);
+
+}
+
+.parent-boxes :nth-child(6) {
+
+    background-image: url(../IMG/gomismta.jpg);
+
+}
+
+/* .parent-boxes :nth-child(7) {
+
+    background-image: url(../IMG/Juta1.jpg);
+
+
+}
+
+.parent-boxes :nth-child(8) {
+    background-image: url(../IMG/Gudauri.jpg);
+}
+
+.parent-boxes :nth-child(9) {
+    background-image: url(../IMG/Mountain.jpg);
+} */
+
+
+
+
+/* .MM {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -376,9 +407,77 @@ body {
     border-bottom: 2px solid red;
     border-radius: 50%;
 }
+
 .MM h3 {
     font-size: 50px;
     font-weight: bold;
-    color: crimson;
+    color: crimson; */
 
+/* } */
+
+/*==================Section2===========================*/
+.destination-containter {
+    height: 600px;
+    width: 100%;
+    background-color: cornflowerblue;
+    background-attachment: fixed;
+    background-image: url(../IMG/Bck.jpg);
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #ffffff;
+    letter-spacing: 0px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+    text-transform: uppercase;
+    border-bottom: 2px solid red;
+    border-width: 6px thick;
+}
+
+.btn-box {
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.btn {
+    background-color: red;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-transform: uppercase;
+
+
+
+}
+
+.tours-box-dest {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+
+/* ================Section 3======================= */
+
+
+.tours-title {
+    background-color: #ffffff;
+    width: 30%;
+    border-bottom: 2px solid red;
+    border-width: thick 6px;
+}
+
+.tours-title h3 {
+    font-size: 40px;
+    width: 100px;
+    padding: 10px;
 }
