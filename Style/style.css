@@ -56,8 +56,9 @@ body {
 
 .navbar-li a {
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 /* .navbar-li {
@@ -567,17 +568,17 @@ p {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  /* background-image: linear-gradient(90deg, #c0aeee,#94e9e5); */
-  background: #4ca1af; /* fallback for old browsers */
+  background: #c9d6ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #c4e0e5,
-    #4ca1af
+    #e2e2e2,
+    #c9d6ff
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #4ca1af
+    #e2e2e2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border: none;
   height: 400px;
 }
@@ -634,16 +635,18 @@ a .soc-net:nth-of-type(4) {
 /* ============== Page About US====================================== */
 .aboutus-container {
   width: 100%;
-  background: #e0eafc; /* fallback for old browsers */
+  background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #cfdef3,
-    #e0eafc
+    #2c5364,
+    #203a43,
+    #0f2027
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #cfdef3,
-    #e0eafc
+    #2c5364,
+    #203a43,
+    #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .info-box-wr {
@@ -661,6 +664,7 @@ a .soc-net:nth-of-type(4) {
   font-weight: bolder;
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 .info-box-wr p {
@@ -682,4 +686,89 @@ a .soc-net:nth-of-type(4) {
   font-weight: bolder;
   font-size: 45px;
   font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+/* ==============Mission ====================*/
+.mis-box {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+.Parent-box-info-mission {
+  width: 30%;
+  height: 400px;
+  text-align: center;
+  padding: 15px;
+  line-height: 1.4;
+}
+.Parent-box-info-mission h1 {
+  border-bottom: 2px solid red;
+  border-width: thick 6px;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.Parent-box-info-mission p {
+  color: black;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+.small-box-info-mission {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pict {
+  width: 500px;
+  height: 500px;
+  background-image: url(../IMG/mission-2.jpg);
+  background-position: center;
+  margin-left: 240px;
+  -webkit-box-shadow: 11px 15px 17px 2px rgba(184, 184, 184, 1);
+  -moz-box-shadow: 11px 15px 17px 2px rgba(184, 184, 184, 1);
+  box-shadow: 11px 15px 17px 2px rgba(184, 184, 184, 1);
+}
+
+/* ===============Contact Page =================== */
+.contact-container {
+  width: 100%;
+}
+.cnt-box {
+  width: 30%;
+  height: 400px;
+  text-align: center;
+  padding: 15px;
+}
+.cnt-box h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.cnt-sml-box {
+  height: 350px;
+  display: grid;
+  padding: 15px;
+}
+.cnt-sml-box input {
+  margin-bottom: 15px;
+  border: none;
+  padding: 5px;
+}
+
+.cnt-sml-box input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+}
+
+.cnt-sml-box .btn {
+  font-size: 18px;
+  margin-top: 15px;
+  width: 187px;
+  border: none;
+}
+#areatext {
+  outline: none;
+  resize: none;
 }
