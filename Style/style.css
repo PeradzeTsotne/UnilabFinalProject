@@ -19,18 +19,18 @@ body {
 .navigation {
   justify-content: space-evenly;
   align-items: center;
-  background: #83a4d4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #b6fbff,
-    #83a4d4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #b6fbff,
-    #83a4d4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #83a4d4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #b6fbff,
+      #83a4d4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #b6fbff,
+      #83a4d4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .navbar-li .Current-p {
   border-bottom: red solid 2px;
 }
@@ -296,6 +296,7 @@ S
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+
   .prev,
   .next,
   .text {
@@ -321,17 +322,16 @@ S
 
 .main-box {
   padding: 20px;
-  background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ece9e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #ffffff,
+      #ece9e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #ffffff,
+      #ece9e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .box-info {
@@ -455,6 +455,7 @@ S
   text-transform: uppercase;
   margin-left: 15px;
 }
+
 .btn a {
   background-color: red;
   border: none;
@@ -502,22 +503,23 @@ S
   margin: 15px 35px 35px 5px;
   padding: 15px;
 }
+
 .direction-boxes {
   width: 80%;
   padding: 10px;
   flex-wrap: wrap;
-  background: #1c92d2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f2fcfe,
-    #1c92d2
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f2fcfe,
-    #1c92d2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1c92d2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #f2fcfe,
+      #1c92d2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #f2fcfe,
+      #1c92d2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .small-box-img {
   width: 40%;
   height: 400px;
@@ -531,6 +533,7 @@ S
   box-shadow: 7px 6px 35px -4px rgba(36, 34, 36, 1);
   border-radius: 50%;
 }
+
 /* =============Footer================ */
 
 .footer-wrapper {
@@ -539,49 +542,51 @@ S
   justify-content: center;
   align-items: center;
 }
+
 .footer-info-box {
   /* background-image: linear-gradient(190deg, #c0aeee,#94e9e5); */
-  background: #4ca1af; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #c4e0e5,
-    #4ca1af
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #c4e0e5,
-    #4ca1af
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #4ca1af;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #c4e0e5,
+      #4ca1af);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #c4e0e5,
+      #4ca1af);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 400px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .footer-info-box h3,
 p {
   color: #ffff;
   margin-bottom: 20px;
 }
+
 .soclial-box {
   width: 5%;
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background: #c9d6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #e2e2e2,
-    #c9d6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #e2e2e2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c9d6ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #e2e2e2,
+      #c9d6ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #e2e2e2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   border: none;
   height: 400px;
 }
+
 a .soc-net {
   font-size: 50px;
 
@@ -591,12 +596,15 @@ a .soc-net {
 a .soc-net:nth-of-type(2) {
   color: #e63946;
 }
+
 a .soc-net:nth-of-type(3) {
   color: #00b4d8;
 }
+
 a .soc-net:nth-of-type(4) {
   color: #e63946;
 }
+
 /* ===================Page Destination===================== */
 .container {
   width: 100%;
@@ -605,23 +613,28 @@ a .soc-net:nth-of-type(4) {
   background-position: center;
   background-size: cover;
 }
+
 .requered-form {
   width: 30%;
   height: 600px;
 }
+
 .wrapper {
   display: grid;
   padding: 15px;
 }
+
 .wrapper input {
   margin-bottom: 30px;
   border: none;
   padding: 15px;
 }
+
 .wrapper input::placeholder {
   font-family: "Montserrat", sans-serif;
   color: gray;
 }
+
 .header h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -631,30 +644,32 @@ a .soc-net:nth-of-type(4) {
   line-height: 2.4rem;
   margin-bottom: 10px;
 }
+
 /* ================================================================== */
 /* ============== Page About US====================================== */
 .aboutus-container {
   width: 100%;
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #2c5364,
+      #203a43,
+      #0f2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #2c5364,
+      #203a43,
+      #0f2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .info-box-wr {
   width: 40%;
   text-align: center;
   margin-bottom: 20px;
   padding: 15px;
 }
+
 .wrapperau {
   position: relative;
 }
@@ -673,11 +688,13 @@ a .soc-net:nth-of-type(4) {
   line-height: 2rem;
   font-family: "Caveat", cursive;
 }
+
 .pic {
   position: absolute;
   top: 10%;
   right: 10%;
 }
+
 .imgme {
   width: 550px;
 }
@@ -695,6 +712,7 @@ a .soc-net:nth-of-type(4) {
   font-family: "Montserrat", sans-serif;
   padding: 20px;
 }
+
 .Parent-box-info-mission {
   width: 30%;
   height: 400px;
@@ -702,6 +720,7 @@ a .soc-net:nth-of-type(4) {
   padding: 15px;
   line-height: 1.4;
 }
+
 .Parent-box-info-mission h1 {
   border-bottom: 2px solid red;
   border-width: thick 6px;
@@ -711,16 +730,19 @@ a .soc-net:nth-of-type(4) {
   padding-bottom: 30px;
   text-transform: uppercase;
 }
+
 .Parent-box-info-mission p {
   color: black;
   font-family: "Dancing Script", cursive;
   font-size: 20px;
 }
+
 .small-box-info-mission {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .pict {
   width: 500px;
   height: 500px;
@@ -736,21 +758,26 @@ a .soc-net:nth-of-type(4) {
 .contact-container {
   width: 100%;
 }
+
 .cnt-box {
   width: 30%;
   height: 400px;
   text-align: center;
   padding: 15px;
 }
+
 .cnt-box h1 {
   font-size: 35px;
   font-weight: bold;
 }
+
 .cnt-sml-box {
   height: 350px;
   display: grid;
   padding: 15px;
+
 }
+
 .cnt-sml-box input {
   margin-bottom: 15px;
   border: none;
@@ -768,7 +795,32 @@ a .soc-net:nth-of-type(4) {
   width: 187px;
   border: none;
 }
+
 #areatext {
   outline: none;
   resize: none;
+}
+
+.address-info {
+  height: 400px;
+  width: 400px;
+  padding: 70px;
+  margin-left: 30px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.address-info p,
+h3 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.address-info h3 {
+  font-weight: bold;
+}
+
+.map {
+  margin-top: 15px;
+  padding: 15px;
 }
