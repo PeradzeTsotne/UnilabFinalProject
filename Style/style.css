@@ -335,12 +335,22 @@ S
 }
 
 .box-info {
-  width: 400px;
+  width: 425px;
   height: 400px;
-  margin: 15px;
+  margin: 10px;
   position: relative;
   box-shadow: -4px 3px 22px -4px rgba(0, 0, 0, 1);
   border-radius: 50%;
+
+}
+
+.text-box-sm {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  background-color: black;
+  width: 100%;
 }
 
 .bckgr-box {
@@ -457,17 +467,13 @@ S
 }
 
 .btn a {
-  background-color: red;
   border: none;
   color: #ffffff;
-  text-align: center;
-  width: 300px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   cursor: pointer;
-  box-sizing: border-box;
   text-transform: uppercase;
-  margin-left: 15px;
+
 }
 
 /* ================Section 3======================= */
@@ -523,12 +529,12 @@ S
 .small-box-img {
   width: 40%;
   height: 400px;
-  margin-bottom: 10px;
+  margin: 20px;
   box-sizing: border-box;
 }
 
 .imgbox {
-  width: 531px;
+  width: 430px;
   height: 400px;
   box-shadow: 7px 6px 35px -4px rgba(36, 34, 36, 1);
   border-radius: 50%;
@@ -823,4 +829,284 @@ h3 {
 .map {
   margin-top: 15px;
   padding: 15px;
+}
+
+/* ===============================Hover======================= */
+.wrapper ul li a,
+.wrapper ul li a:after,
+.wrapper ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: #555;
+}
+
+.wrapper.stroke ul li a {
+  position: relative;
+}
+
+.wrapper .stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.wrapper .stroke ul li a:hover:after {
+  width: 100%;
+}
+
+button:hover {
+  transition: all 4s;
+  background: #C33764;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1D2671, #C33764);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box-info:hover {
+  transition: all 4s;
+  background: #C33764;
+
+}
+
+
+
+.box-info:hover .text-box-sm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  transition: all 4s;
+}
+
+input[type=button]:hover {
+  transition: all 4s;
+  background: #C33764;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1D2671, #C33764);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ==============================Resoinsive===================== */
+
+@media only screen and (max-width: 1920px) {
+  .pic {
+    top: 3%;
+  }
+
+  .pict {
+    width: 800px;
+  }
+
+  .map iframe {
+    width: 800px;
+  }
+
+  .tours-title {
+    margin-left: 15px;
+  }
+
+  .direction-boxes {
+    padding: 0px;
+  }
+
+  .small-box-img {
+    width: 40%;
+    margin: 31px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .map iframe {
+    width: 490px;
+  }
+
+  .map {
+    width: 500px;
+  }
+
+  .address-info {
+    width: 338px;
+    padding: 30px;
+
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .header-container {
+    width: 360px;
+  }
+
+  .header-container h3 {
+    display: none;
+  }
+
+  .header-container .logo-text {
+    display: none;
+  }
+
+  .wrapper {
+    display: contents;
+  }
+
+  .section1 {
+    width: 360px;
+  }
+
+  .parent-boxes :nth-of-type(1),
+  .parent-boxes :nth-of-type(2),
+  .parent-boxes :nth-of-type(3) {
+    display: none;
+  }
+
+  .box-info {
+    width: 315px;
+  }
+
+  .destinations {
+    width: 360px;
+
+  }
+
+  .destination-containter {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+  }
+
+
+  .dest-box h3 {
+    font-size: 24px;
+  }
+
+  .small-box-img {
+    width: 360px;
+  }
+
+  .direction-boxes {
+    width: 360px;
+  }
+
+  .tours-title {
+    width: 360px;
+    margin-top: 135px;
+  }
+
+  .dest-list .lists {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 220px;
+  }
+
+  .btn a {
+    font-size: 18px;
+  }
+
+  .infotext {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .small-box-img {
+    margin: 5px;
+  }
+
+  .imgbox {
+    width: 280px;
+    height: 355px;
+    border-radius: 0%;
+  }
+
+  .direction-boxes {
+    width: 300px;
+  }
+
+
+
+  .footer-box {
+    width: 360px;
+  }
+
+  .soclial-box {
+    width: 20%;
+  }
+
+  .tours-box-dest {
+    width: 285px;
+  }
+
+  .text-box-dir h3 {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .direction-boxes :nth-of-type(1),
+  .direction-boxes :nth-of-type(2),
+  .direction-boxes :nth-of-type(3),
+  .direction-boxes :nth-of-type(4) {
+    display: none;
+  }
+
+  .info-box-wr {
+    width: 360px;
+  }
+
+  .pic {
+    display: none;
+  }
+
+  .small-box-info-mission {
+    width: 300px;
+  }
+
+  footer {
+    width: 360px;
+    margin-top: 65px;
+  }
+
+  .map {
+    display: none;
+  }
+
+  .wrapper {
+    display: block;
+    width: 360px;
+  }
+
+  .navbar {
+    width: 360px;
+  }
+
+  .requered-form {
+    width: 360px;
+  }
+
+  input[type="button"] {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .navbar-li a {
+    font-size: 14px;
+  }
+
 }
