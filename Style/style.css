@@ -810,10 +810,11 @@ a .soc-net:nth-of-type(4) {
 .address-info {
   height: 400px;
   width: 400px;
-  padding: 70px;
   margin-left: 30px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 30px;
 }
 
 .address-info p,
@@ -822,14 +823,14 @@ h3 {
   margin-bottom: 15px;
 }
 
-.address-info h3 {
-  font-weight: bold;
-}
+
 
 .map {
   margin-top: 15px;
   padding: 15px;
 }
+
+
 
 /* ===============================Hover======================= */
 .wrapper ul li a,
@@ -913,7 +914,7 @@ input[type=button]:hover {
   }
 
   .map iframe {
-    width: 800px;
+    width: 700px;
   }
 
   .tours-title {
